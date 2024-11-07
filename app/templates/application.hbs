@@ -1,7 +1,5 @@
-{{page-title "Example"}}
+<Foo @foo={{this.outsideFoo}} />
 
-{{outlet}}
-
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+<button type="button" {{on "click" this.setOutsideFoo}}>
+  set foo
+</button>
